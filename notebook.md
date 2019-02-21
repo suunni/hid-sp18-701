@@ -17,5 +17,5 @@
 
 * VirtualBox extensions setup to enable shared clipboard
 * Reading Swagger, Connexion
-* Working on Juju paper
+* Working on Juju paper- facing issues with reference links
 
