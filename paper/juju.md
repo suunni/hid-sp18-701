@@ -5,7 +5,7 @@ Juju is an open source application modeling tool. It allows you to deploy, confi
 Juju using MAAS, Metal as a Service. We are exploring the deployment model of Juju.
 
 ## Introduction
-Deploying [software component systems][lascu2015automatic] is
+Deploying software component systems[@lascu2015automatic] is
 becoming a critical challenge, especially due to the advent of Cloud
 Computing technologies that make it possible to quickly run complex
 distributed software systems on-demand on a virtualized infrastructure
@@ -26,14 +26,14 @@ expertise and knowledge of the cloud and application entities involved
 in the process IaaS describes the provision of processing, storage and
 networking (and potentially) other basic computing resources, over a
 network and in an on-demand fashion. An example of IaaS is the
-[AWS][www-aws], Juju.
+AWS[@www-aws], Juju.
 
 IaaS customers does not host or manage the dedicated or virtual
 server.
 ![Basic Deployment of Juju scheme of work as IaaS](images/juju-scheme-of-work-yurkevich.jpg){#fig:juju-scheme-of-work-yurkevich}
 
 
-In PaaS (e.g., [Google App Engine][www-googleappengine], [Azure][www-azure]
+In PaaS (e.g., Google App Engine[@www-googleappengine], Azure[@www-azure]
 a full development environment is provided. Applications are directly written in a programming language
 supported by the framework offered by the provider, and then
 automatically deployed to the cloud. The high-level of automation
@@ -45,12 +45,12 @@ PaaS provider, and the application code must conform to specific APIs.
 
 ## Juju
 
-In the IaaS, two [deployment approaches][lascu2015automatic] are
+In the IaaS, two deployment approaches[@lascu2015automatic] are
 gaining more and more momentum: the holistic and the DevOps one.  In
 the former, also known as model-driven approach, one derives a
 complete model for the entire application and the deployment plan is
 then derived in a top-down manner. In the latter, put forward by the
-[DevOps community][www-devOps], an application is deployed by
+DevOps community[@www-devOps], an application is deployed by
 assembling available components that serve as the basic building
 blocks. This emerging approach works in a bottom-up direction: from
 individual component descriptions and recipes for installing them, an
@@ -58,8 +58,8 @@ application is built as a composition of these recipes.
 
 
 
-One of the representative for the DevOps approach is [Juju]
-[www-juju], by Canonical. It is based on the concept of charm:
+One of the representative for the DevOps approach is Juju
+[@www-juju], by Canonical. It is based on the concept of charm:
 the atomic unit containing a description of a component.
 
 
@@ -81,8 +81,8 @@ will be destroyed along with it.
 ## Juju Installation
 
 Installing Juju is straight forward, it is described in detail in
-[Getting Started document][www-jujucharm-documentation] and Paper
-regarding deploying Juju on [MaaS][juju-paper].
+Getting Started document[@www-jujucharm-documentation] and Paper
+regarding deploying Juju on MaaS[@juju-paper].
 
 
 
@@ -100,7 +100,7 @@ $ sudo apt install snapd
 
 Not covering setup of LXD or MaaS for the physical containers or
 cluster on which Juju is to be installed. We can refer to 
-[][www-jujucharm-documentation] for LXD and [][juju-paper] for
+[@www-jujucharm-documentation] for LXD and [@juju-paper] for
 MaaS installation.
 
 
@@ -117,3 +117,5 @@ MaaS installation.
 ## Managing relations between Applications
 
 ## Cleaning up the Juju setup
+
+#References
